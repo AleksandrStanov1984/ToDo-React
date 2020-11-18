@@ -1,13 +1,23 @@
 import React from 'react';
 
 import ToDoListItem from "./ToDoListItem";
+import './ToDoList.css';
 
-const ToDoList = () => {
-    return(
-        <ul>
-            <li><ToDoListItem label = "A"/></li>
-            <li><ToDoListItem label = "B"/></li>
-            <li><ToDoListItem label = "C"/></li>
+const ToDoList = ({todos}) => {
+
+ const elements = todos.map((item) => {
+
+     const {id, ... itemProps} = item; //Рестуризация, достоем из item все id
+     return(
+         <li key={id} className="list-group-item">
+             {<ToDoListItem {... itemProps}/> /*передаем массив item без id*/}
+         </li>
+     );
+ });
+
+    return (
+        <ul className="list-group todo-list">
+            {elements}
         </ul>
     );
 };

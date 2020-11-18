@@ -1,5 +1,7 @@
 import React from 'react';
 
+import './SearchPanel.css';
+
 const SearchPanel = () => {
 
     const Search = 'search...';

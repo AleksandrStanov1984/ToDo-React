@@ -1,10 +1,17 @@
 import React from 'react';
 
-const ToDoListItem = (props) => {
+import './ToDoListItem.css';
 
-   // const items = ['Learn React', 'Build Awesome App', 'Next'];
-    return <span>{props.label}</span>
+const ToDoListItem = ({label, important = false}) => {
 
+    const style = {
+        color: important ? 'tomato' : 'black'
+    };
+
+    return(
+        <span className="todo-list-item"
+        style={style}>{label}</span>
+    );
 };
 
 export default ToDoListItem;
