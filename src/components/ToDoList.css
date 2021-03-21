@@ -1,3 +1,6 @@
 .todo-list .list-group-item{
     padding: .25rem .75rem;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 20px;
 }

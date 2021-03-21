@@ -6,7 +6,6 @@ import './ToDoList.css';
 const ToDoList = ({todos}) => {
 
  const elements = todos.map((item) => {
-
      const {id, ... itemProps} = item; //Рестуризация, достоем из item все id
      return(
          <li key={id} className="list-group-item">

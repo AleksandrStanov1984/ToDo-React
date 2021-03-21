@@ -3,7 +3,11 @@ import React from 'react';
 import './AppHeader.css';
 
 const AppHeader = () => {
-    return <h1>Your ToDo List</h1>;
+    return (
+        <div className="header">
+            <h1>Your ToDo List</h1>
+        </div>
+    );
 };
 
 export default AppHeader;
