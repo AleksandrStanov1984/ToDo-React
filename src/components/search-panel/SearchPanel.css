@@ -1,5 +1,16 @@
 .search-input{
-    width: auto;
+    width: 200%;
     flex-grow: 1;
     margin-right: 3px;
+    font-family: cursive;
+}
+.search-radius{
+    margin-left: 20px;
+}
+.radius{
+    border-radius: 6px;
+    border: white;
+}
+.radius:hover{
+    border: solid 3px lightgray;
 }

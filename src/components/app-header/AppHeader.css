@@ -1,15 +1,12 @@
-/*.header{*/
-/*    text-align: center;*/
-/*    color: #6060ee;*/
-/*    margin-top: 10%;*/
-/*}*/
 .app-header{
     align-items: flex-end;
 }
 .app-header h1{
+    font-family: cursive;
     flex-grow: 1;
 }
-app-header h2{
+app-header h4 h4{
+    font-family: cursive;
     font-size: 1.2rem;
     color: grey;
 }

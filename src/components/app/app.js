@@ -4,7 +4,7 @@ import ReactDom from 'react-dom';
 import AppHeader from "../app-header";
 import SearchPanel from "../search-panel";
 import ToDoList from "../todo-list";
-import ItemStatusFilter from "../item_statys_filter";
+import ItemStatusFilter from "../item-statys-filter";
 import './app.css'
 
 const App = () => {
