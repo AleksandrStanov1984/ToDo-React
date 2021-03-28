@@ -1,5 +1,4 @@
 .todo-Search{
-   /* padding: .25rem .75rem;*/
     margin: 10px 20px 0 490px;
     text-align: center;
     padding: 8px 10px;
@@ -18,7 +17,7 @@
 }
 
 .todo-Search:nth-child(1):hover {
-    background: bisque;
+    background: lightgray;
     border-radius: 6px;
 }
 
@@ -32,7 +31,6 @@
     text-align: center;
     padding: 8px 10px;
     border: solid 1px #777777;
-    /*color: #7777777;*/
     background:#ffffff;
     tansition: all .3s linear;
     -webkit-transition: all .3s linear;
@@ -47,7 +45,9 @@
 }
 
 .button:nth-child(1):hover {
-    background: #3b3bc9;
+    background-color: grey;
+    border-color: grey;
+    color: white;
 }
 
 .button-small {

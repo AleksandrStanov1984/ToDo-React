@@ -5,28 +5,23 @@ import './ToDoListItem.css';
 const ToDoListItem = ({label, important = false}) => {
 
     const style = {
-        color: important ? '#ff5900' : '#000000'
+        color: important ? 'steelbkue' : 'black',
+        fontWeight: important ? 'bold' : 'normal'
     };
 
     return (
-        <div className="my-table">
+         <div className="my-table">
             <tr>
                 <td className="todo-list-item">
-                    <span style={style}>{label}</span>
+                    <span style={style}>
+                        {label}</span>
                 </td>
-                <td>
-                    <button type="button" className="btn-del">
-                        <i className="fa fa-trash"/>
-                    </button>
-                    <button type="button" className="btn">
-                        <i className="fa fa-bars"/>
-                    </button>
+                <td id="div2">
+                    <button type="button" className="btn-del"><i className="fa fa-trash"/></button>
+                    <button type="button" className="btn-in"><i className="fa fa-exclamation"/></button>
                 </td>
             </tr>
-            <table>
-
-            </table>
-        </div>
+         </div>
     );
 };
 
