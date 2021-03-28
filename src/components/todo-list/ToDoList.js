@@ -1,6 +1,6 @@
 import React from 'react';
 
-import ToDoListItem from "./ToDoListItem";
+import ToDoListItem from "../todo-list-item/ToDoListItem";
 import './ToDoList.css';
 
 const ToDoList = ({todos}) => {
