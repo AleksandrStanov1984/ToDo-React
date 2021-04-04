@@ -25,6 +25,7 @@ export default class AddItem extends Component {
             <form className="addItem d-flex"
             onSubmit={this.onSubmit}>
                 <input type="text" className="form-control search-input radius"
+                       maxLength="255"
                        placeholder=" What needs to be done"
                        value={this.state.label}
                        onChange={this.onLabelChange}
