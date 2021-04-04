@@ -2,7 +2,8 @@ import React, {Component} from 'react';
 import '../search-panel/SearchPanel.css';
 import '../item-statys-filter/ItemStatusFilter.css'
 
-export default class ItemStatusFilter extends Component{
+export default
+class ItemStatusFilter extends Component{
   render() {
       return (
           <div className="btn-group f">

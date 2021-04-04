@@ -1,0 +1,16 @@
+.addItem{
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.my-button-color{
+    height: auto;
+    border-color: black;
+    color: black;
+    width: 155px;
+}
+
+.addItem input{
+    margin-right: 10px;
+}
+
