@@ -5,6 +5,7 @@ import './ToDoList.css';
 const ToDoList = ({todos, onDeleted, onToggleImportant, onToggleDone}) => {
     const elements = todos.map((item) => {
         const {id, ...itemProps} = item; //Рестуризация, достоем из item все id
+
         return (
             <li key={id} className="list-group-item">
                 {<ToDoListItem {...itemProps}

@@ -1,8 +1,7 @@
 import React, {Component} from 'react';
 import './ToDoListItem.css';
 
-export default
-class ToDoListItem extends Component {
+export default class ToDoListItem extends Component {
     // onLabelClick = () => {
     //     this.setState({done: true});
     // };
@@ -14,24 +13,24 @@ class ToDoListItem extends Component {
     //     });
     // };
     render() {
-        const {label, OnDeleted, onToggleImportant, onToggleDone, done, important } = this.props;
+        const {label, OnDeleted, onToggleImportant, onToggleDone, done, important} = this.props;
 
         let classNames = 'todo-list-item';
-        if(done)
+        if (done)
             classNames += ' done';
-        if(important)
+        if (important)
             classNames += ' important';
 
         return (
             <span className={classNames}>
             <span className="todo-list-item-label"
-                  onClick={ onToggleDone }>{label}
+                  onClick={onToggleDone}>{label}
             </span>
             <button type="button" className="btn btn-outline-success btn-sm todo-list-item aa"
-                    onClick={ onToggleImportant }>
+                    onClick={onToggleImportant}>
                 <i className="fa fa-exclamation"/></button>
             <button type="button" className="btn btn-outline-danger btn-sm todo-list-item a"
-            onClick={OnDeleted}>
+                    onClick={OnDeleted}>
                 <i className="fa fa-trash-o"/></button>
         </span>
         );

@@ -26,7 +26,7 @@ export default class App extends Component {
             important: false,
             id: this.maxId++
         };
-    }
+    };
 
     deleteItem = (id) => {
         this.setState(({todoDate}) => {
@@ -38,7 +38,7 @@ export default class App extends Component {
         });
     };
 
-    addItem = (text, id) => {
+    addItem = (text) => {
         const newItem = this.createTodoItem(text);
         this.setState(({todoDate}) => {
             const newTodoDate = [...todoDate, newItem];
@@ -58,7 +58,7 @@ export default class App extends Component {
             newItem,
             ...arr.slice(inx + 1)
         ];
-    }
+    };
 
     onToggleImportant = (id) => {
         this.setState(({todoDate}) => {
@@ -80,13 +80,16 @@ export default class App extends Component {
         const {todoDate} = this.state;
         const doneCount = todoDate.filter((el) => el.done).length;
         const todoCount = todoDate.length - doneCount;
+
         return (
             <div className="todo-app">
                 <AppHeader toDo={todoCount} done={doneCount}/>
+
                 <div className="top-panel d-flex">
                     <SearchPanel/>
                     <ItemStatusFilter/>
                 </div>
+
                 <ToDoList
                     todos={todoDate}
                     onDeleted={this.deleteItem}
@@ -94,9 +97,7 @@ export default class App extends Component {
                     onToggleDone={this.onToggleDone}
                 />
 
-                <AddItem
-                    OnAddItem={this.addItem}
-                />
+                <AddItem OnAddItem={this.addItem}/>
             </div>
         );
     };
