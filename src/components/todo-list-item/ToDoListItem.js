@@ -12,6 +12,7 @@ export default class ToDoListItem extends Component {
     //         }
     //     });
     // };
+
     render() {
         const {label, OnDeleted, onToggleImportant, onToggleDone, done, important} = this.props;
 
